@@ -71,12 +71,12 @@ module.exports = {
       },
       hash: true,
       inject: false,
-      title: appConfig['name_here.app.name'],
-      noscript: appConfig['name_here.app.noscript'],
+      title: appConfig['bemika.app.name'],
+      noscript: appConfig['bemika.app.noscript'],
       template: path.join(__dirname, '../public', 'index.ejs'),
       meta: {
         viewport: 'width=device-width, initial-scale=1',
-        description: appConfig['name_here.app.description']
+        description: appConfig['bemika.app.description']
       }
     })
   ],
