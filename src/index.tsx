@@ -1,12 +1,18 @@
 
-import React from "react";
+import React, { Fragment } from "react";
 import {render} from "react-dom";
 import './index.less';
 
-export const App = (props: any): JSX.Element => (
-  <h1>Hello {props.hello}</h1>
+import SceneManager from "./containers/scene-manager/SceneManager";
+
+export const App = (): JSX.Element => (
+  <Fragment>
+    <SceneManager>
+
+    </SceneManager>
+  </Fragment>
 );
 
 document.addEventListener('DOMContentLoaded', () => render(
-  <App hello="World" />, document.getElementById('app')
+  <App />, document.getElementById('app')
 ));
