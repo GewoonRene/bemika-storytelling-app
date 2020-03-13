@@ -1,12 +1,21 @@
-import React, { PureComponent } from 'react';
+import React, {PureComponent} from 'react';
 
-class SceneManager extends PureComponent {
+type SceneManagerProps = {
+  children: any
+}
+
+export default class SceneManager extends PureComponent<SceneManagerProps> {
+
+  constructor(props: SceneManagerProps) {
+    super(props);
+  }
 
   public render(): JSX.Element {
     return (
-      <div>hello</div>
+      <div className="app-scene-manager">
+        {this.props.children}
+      </div>
     );
-  }
-}
+  };
 
-export default SceneManager;
+}

@@ -75,6 +75,7 @@ module.exports = {
       title: appConfig['bemika.app.name'],
       noscript: appConfig['bemika.app.noscript'],
       template: path.join(__dirname, '../public', 'index.ejs'),
+      favicon: path.join(__dirname, '../public', 'favicon.png'),
       meta: {
         viewport: 'width=device-width, initial-scale=1',
         description: appConfig['bemika.app.description']
