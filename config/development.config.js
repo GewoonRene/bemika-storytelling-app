@@ -12,7 +12,7 @@ module.exports = merge(common, {
     historyApiFallback: true,
     publicPath: '/',
     overlay: true,
-    open: true,
+    open: false,
     stats: 'errors-only',
     hot: true
   },

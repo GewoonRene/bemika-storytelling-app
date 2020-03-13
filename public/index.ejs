@@ -18,6 +18,7 @@
     <% for (i in htmlWebpackPlugin.files.css) { %>
         <link rel="stylesheet" type="text/css" href="<%= htmlWebpackPlugin.files.css[i] %>" />
     <% } %>
+    <link href="<%=htmlWebpackPlugin.files.favicon%>" rel="shortcut icon">
 </head>
 <body>
 <noscript><%= htmlWebpackPlugin.options.noscript%></noscript>

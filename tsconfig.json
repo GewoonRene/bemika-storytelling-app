@@ -8,6 +8,7 @@
     "removeComments": true,
     "noUnusedLocals": true,
     "noImplicitReturns": true,
+    "noImplicitThis": false,
     "allowJs": true,
     "sourceMap": true,
     "jsx": "react",
