@@ -6,7 +6,10 @@ import './index.less';
 import SceneManager from "@containers/scene-manager/SceneManager";
 import Sprite from "@components/sprite/Sprite";
 
-import Blackbird from './assets/blackbird.svg';
+import HeaderColor from './assets/Rectangle.svg';
+import FirstPhone from './assets/Scherm2.svg';
+import SecondPhone from './assets/Scherm3.svg';
+import RobinAssistant from  './assets/Robin.svg';
 
 /*
  * App Component
@@ -14,8 +17,10 @@ import Blackbird from './assets/blackbird.svg';
 export const App = (): JSX.Element => (
   <Fragment>
     <SceneManager>
-      <Sprite classname="first" path={Blackbird} />
-      <Sprite path={Blackbird} />
+      <Sprite classname="first" path={HeaderColor}/>
+      <Sprite classname="robin" path={RobinAssistant}/>
+      <Sprite classname="firstPhone" path={FirstPhone}/>
+      <Sprite classname="secondPhone" path={SecondPhone}/>
     </SceneManager>
   </Fragment>
 );
