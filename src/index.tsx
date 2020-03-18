@@ -1,14 +1,23 @@
 
 import React, { Fragment } from "react";
 import {render} from "react-dom";
-import s from './center.module.less';
+import s from './story.module.less';
 import './index.less';
 
 import SceneManager from "@containers/scene-manager/SceneManager";
 import Sprite from "@components/sprite/Sprite";
 
-import Petra from './assets/svg/petra.svg';
-import Bois from './assets/svg/petraandbois.svg';
+import Petra from './assets/svg/hero/petra.svg';
+import PetraMobile from './assets/svg/hero/petra-mobile.svg';
+import Familie from './assets/svg/hero/familie.svg';
+import Rosa from './assets/svg/hero/rosa.svg';
+import Levi from './assets/svg/hero/levi.svg';
+
+import Thee from './assets/svg/hero-functions/thee.svg';
+import Wekker from './assets/svg/hero-functions/wekker.svg';
+import Wasmachine from './assets/svg/hero-functions/wasmachine.svg';
+import Rek from './assets/svg/hero-functions/rek.svg';
+import Bed from './assets/svg/hero-functions/bed.svg';
 
 /*
  * App Component
@@ -35,7 +44,41 @@ export const App = (): JSX.Element => (
             <p>Elke client heeft een andere dag indeling. Door middel van een planning houdt Petra bij wat ze met een client samen doet. De ene client heeft meer begeleiding nodig dan de andere.</p>
           </div>
           <div className={s.secondSprite}>
-            <Sprite path={Bois}/>
+            <Sprite path={Familie}/>
+          </div>
+        </div>
+
+        <div className={s.heroStory}>
+          <div className={s.herobanner}>
+            <Sprite path={Rosa} />
+          </div>
+          <div className={s.heroContainer}>
+            <div className={s.heroText}>
+              <h1>IK BEN ROSA</h1>
+              <p>“Ik ben 24 jaar oud en Petra begeleidt mij al een aantal jaren”</p>
+            </div>
+            <div className={s.heroFunctions}>
+              <Sprite path={Wekker} />
+              <Sprite path={Bed} />
+              <Sprite path={Thee} />
+            </div>
+          </div>
+        </div>
+
+        <div className={s.heroStory}>
+          <div className={s.herobanner}>
+            <Sprite path={Levi} />
+          </div>
+          <div className={s.heroContainer}>
+            <div className={s.heroText}>
+              <h1>IK BEN LEVI</h1>
+              <p>“Ik ben 16 jaar oud. Ik krijg begeleiding omdat ik Heller heb”.</p>
+            </div>
+            <div className={s.heroFunctions}>
+              <Sprite path={Thee} />
+              <Sprite path={Rek} />
+              <Sprite path={Wasmachine} />
+            </div>
           </div>
         </div>
 
@@ -45,7 +88,7 @@ export const App = (): JSX.Element => (
             <p>Al dat papierwerk werd Petra te veel. De mappen stapelden op. Op dit moment gebruikt zij Robin Assistant om de taken per client bij te houden. Ze houdt nu ook per client meer tijd over en alles is makkelijk in een schema bij te houden via de telefoon of computer.</p>
           </div>
           <div className={s.firstSprite}>
-            <Sprite path={Petra}/>
+            <Sprite path={PetraMobile}/>
           </div>
         </div>
 
