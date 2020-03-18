@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 * { box-sizing: border-box }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -42,6 +43,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+a{
+  text-decoration: none;
+}
+
 #app {
   position: relative;
   height: 200vh;
@@ -50,29 +55,70 @@ table {
 
 .first {
   position: absolute;
-  top: -150px;
-  left: -8px;
-  width: 101%;
+  top: -200px;
+  left: -80px;
+  width: 108%;
 }
 
 .robin {
   position: absolute;
-  top: 5%;
+  top: 8%;
   left: 60%;
+}
+
+.quote {
+  font-size: 40px;
+  color: white;
+  position: absolute;
+  top: 18%;
+  left: 57%;
+}
+
+.button {
+  border-radius: 25px;
+  width: 320px;
+  height: 50px;
+  padding-top: 15px;
+  padding-left: 80px;
+  background: #F03875;
+  position: absolute;
+  top: 25%;
+  left: 61%;
+}
+.button a{
+  font-size: 18px;
+  color: white;
 }
 
 .firstPhone {
   position: absolute;
-  top: 10%;
-  left: -70px;
+  top: 12%;
+  left: -85px;
   height: 35%;
   width: 40%;
 }
 
 .secondPhone {
   position: absolute;
-  top: 5%;
+  top: 6%;
   left: 15%;
   height: 35%;
   width: 40%;
+}
+
+.scrollDown {
+  color: #464545;
+  position: absolute;
+  top: 43%;
+  left: 46%;
+}
+.outerPointer {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+}
+.innerPointer {
+  position: absolute;
+  top: 46%;
+  left: 970px;
 }
