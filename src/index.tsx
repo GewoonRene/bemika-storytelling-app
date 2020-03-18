@@ -7,6 +7,12 @@ import './index.less';
 import SceneManager from "@containers/scene-manager/SceneManager";
 import Sprite from "@components/sprite/Sprite";
 
+import HeaderColor from './assets/header-color.svg';
+import FirstPhone from './assets/Scherm2.svg';
+import SecondPhone from './assets/schermagenda.svg';
+import RobinAssistant from  './assets/Robin.svg';
+import PointerDown from './assets/pointerdown.svg';
+import Arrow from './assets/arrow.svg';
 import Petra from './assets/svg/hero/petra.svg';
 import PetraMobile from './assets/svg/hero/petra-mobile.svg';
 import Familie from './assets/svg/hero/familie.svg';
@@ -22,9 +28,38 @@ import Bed from './assets/svg/hero-functions/bed.svg';
 /*
  * App Component
  * * * */
+export const Daily = (): JSX.Element => (
+    <div className="quote">
+        YOUR DAILY ASSISTANT
+    </div>
+);
+
+export const Button = (): JSX.Element => (
+  <div className="button">
+          <a href="#">IK MELD ME AAN</a>
+  </div>
+);
+
+export const Scroll = (): JSX.Element => (
+  <div className="scrollDown">
+      SCROLL OM TE BEGINNEN
+  </div>
+);
+
 export const App = (): JSX.Element => (
   <Fragment>
     <SceneManager>
+      {/*  HEADER*/}
+      <Sprite classname="first" path={HeaderColor}/>
+      <Sprite classname="robin" path={RobinAssistant}/>
+      <Daily />
+      <Button />
+      <Sprite classname="firstPhone" path={FirstPhone}/>
+      <Sprite classname="secondPhone" path={SecondPhone}/>
+      <Scroll />
+      <Sprite classname="outerPointer" path={PointerDown} />
+      <Sprite classname="innerPointer" path={Arrow} />
+    {/*  END HEADER*/}
 
       <div className={s.storyContainer}>
 
