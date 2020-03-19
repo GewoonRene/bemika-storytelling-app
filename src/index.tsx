@@ -13,6 +13,8 @@ import RobinAssistant from  './assets/Robin.svg';
 import PointerDown from './assets/pointerdown.svg';
 import Arrow from './assets/arrow.svg';
 
+// import BlauweBalk from './assets/Rectangle.svg';
+
 /*
  * App Component
  * * * */
@@ -37,7 +39,7 @@ export const Scroll = (): JSX.Element => (
 export const App = (): JSX.Element => (
   <Fragment>
     <SceneManager>
-      {/*  HEADER*/}
+      {/*  Header*/}
       <Sprite classname="first" path={HeaderColor}/>
       <Sprite classname="robin" path={RobinAssistant}/>
       <Daily />
@@ -47,8 +49,10 @@ export const App = (): JSX.Element => (
       <Scroll />
       <Sprite classname="outerPointer" path={PointerDown} />
       <Sprite classname="innerPointer" path={Arrow} />
-    {/*  END HEADER*/}
+    {/*  END Header*/}
     </SceneManager>
+      {/*  Story-Center*/}
+      {/*  END Story-Center*/}
   </Fragment>
 );
 
