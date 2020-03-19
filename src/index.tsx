@@ -42,8 +42,8 @@ export const App = (): JSX.Element => (
       <Sprite classname="robin" path={RobinAssistant}/>
       <Daily />
       <Button />
-      <Sprite classname="firstPhone" path={FirstPhone}/>
       <Sprite classname="secondPhone" path={SecondPhone}/>
+      <Sprite classname="firstPhone" path={FirstPhone}/>
       <Scroll />
       <Sprite classname="outerPointer" path={PointerDown} />
       <Sprite classname="innerPointer" path={Arrow} />
