@@ -56,17 +56,17 @@ export const App = (): JSX.Element => (
 
       {/*  Header*/}
       <div className="header">
-        <Sprite classname="first" path={HeaderColor}/>
-        <Sprite classname="robin" path={RobinAssistant}/>
-        <Daily />
-        <Button />
-        <Sprite classname="secondPhone" path={SecondPhone}/>
-        <Sprite classname="firstPhone" path={FirstPhone}/>
-        <Scroll />
-        <Sprite classname="outerPointer" path={PointerDown} />
-        <Sprite classname="innerPointer" path={Arrow} />
+      <Sprite classname="first" path={HeaderColor}/>
+      <Sprite classname="robin" path={RobinAssistant}/>
+      <Daily />
+      <Button />
+      <Sprite classname="secondPhone" path={SecondPhone}/>
+      <Sprite classname="firstPhone" path={FirstPhone}/>
+      <Scroll />
+      <Sprite classname="outerPointer" path={PointerDown} />
+      <Sprite classname="innerPointer" path={Arrow} />
       </div>
-      {/*  END Header*/}
+    {/*  END Header*/}
 
       <div className={s.storyContainer}>
 
