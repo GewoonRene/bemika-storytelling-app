@@ -9,6 +9,7 @@
 }
 
 .story-container {
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -55,6 +56,15 @@
   margin-top: 3vh;
 }
 
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-banner {
+  position: relative;
+}
+
 .hero-story {
   display: flex;
   flex-direction: row;
@@ -82,9 +92,123 @@
   }
 }
 
-.hero-functions { width: 100% }
+.hero-functions {
+  width: 100%;
+  white-space: nowrap;
+}
 .hero-functions > img {
   margin: 0 5px;
 }
 
+@media only screen and (min-width: 768px) {
+  .story-container {
+    margin: 0 auto;
+    width: 70vw;
+  }
 
+  .story {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 5vh 0;
+    width: 100%;
+  }
+
+  .story-text {
+    width: 40%;
+    margin-right: 5vh;
+  }
+
+  .story:nth-child(2) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    .story-text {
+      margin-right: 0;
+      width: 50%;
+    }
+  }
+
+  .first-sprite {
+    width: auto;
+  }
+
+  .second-sprite {
+    width: auto;
+    transform: translateX(0px);
+  }
+
+  .hero {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 5vh 0;
+  }
+
+}
+
+@media only screen and (min-width: 1100px) {
+  .story-container {
+    margin: 0 auto;
+    width: 60vw;
+  }
+
+  .first-sprite > img {
+    width: 25vw;
+  }
+  .second-sprite > img {
+    width: 30vw;
+    transform: translateX(-2vh);
+  }
+
+  .story-text {
+    padding: 20px;
+    h1 {
+      font-family: 'GilroyExtraBold', sans-serif;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+      font-size: 35px;
+      line-height: 1.2;
+      margin: 2vh 0;
+    }
+
+    p {
+      font-family: 'GilroyLight', sans-serif;
+      font-size: 20px;
+      line-height: 1.3;
+    }
+
+  }
+
+  .hero {
+    justify-content: space-between;
+  }
+
+  .hero-story {
+    width: 45%;
+  }
+
+  .hero-banner {
+    width: 20%;
+  }
+
+  .hero-functions { margin-top: 2vh }
+  .hero-functions > img {
+    margin: 0 2vh 0 0;
+    width: 15%;
+  }
+
+  .hero-text {
+    h1 {
+      font-family: 'GilroyExtraBold', sans-serif;
+      font-weight: 700;
+      font-size: 30px;
+      margin: 1vh 0;
+    }
+
+    p {
+      font-family: 'GilroyLight', sans-serif;
+      font-size: 18px;
+      line-height: 1.1;
+    }
+  }
+
+
+}
