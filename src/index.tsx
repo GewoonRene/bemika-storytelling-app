@@ -2,6 +2,7 @@
 import React, { Fragment } from "react";
 import {render} from "react-dom";
 import s from './story.module.less';
+import f from './footer.module.less'
 import './index.less';
 
 import SceneManager from "@containers/scene-manager/SceneManager";
@@ -25,6 +26,8 @@ import Wekker from './assets/svg/hero-functions/wekker.svg';
 import Wasmachine from './assets/svg/hero-functions/wasmachine.svg';
 import Rek from './assets/svg/hero-functions/rek.svg';
 import Bed from './assets/svg/hero-functions/bed.svg';
+
+import Mob from './assets/footer/mobile.svg'
 
 /*
  * App Component
@@ -52,15 +55,17 @@ export const App = (): JSX.Element => (
     <SceneManager>
 
       {/*  Header*/}
-      <Sprite classname="first" path={HeaderColor}/>
-      <Sprite classname="robin" path={RobinAssistant}/>
-      <Daily />
-      <Button />
-      <Sprite classname="secondPhone" path={SecondPhone}/>
-      <Sprite classname="firstPhone" path={FirstPhone}/>
-      <Scroll />
-      <Sprite classname="outerPointer" path={PointerDown} />
-      <Sprite classname="innerPointer" path={Arrow} />
+      <div className="header">
+        <Sprite classname="first" path={HeaderColor}/>
+        <Sprite classname="robin" path={RobinAssistant}/>
+        <Daily />
+        <Button />
+        <Sprite classname="secondPhone" path={SecondPhone}/>
+        <Sprite classname="firstPhone" path={FirstPhone}/>
+        <Scroll />
+        <Sprite classname="outerPointer" path={PointerDown} />
+        <Sprite classname="innerPointer" path={Arrow} />
+      </div>
       {/*  END Header*/}
 
       <div className={s.storyContainer}>
@@ -129,6 +134,30 @@ export const App = (): JSX.Element => (
           <div className={s.firstSprite}>
             <Sprite path={PetraMobile}/>
           </div>
+        </div>
+
+      </div>
+
+
+
+      <div className={f.footer}>
+
+        <div className={f.footerMobile}>
+          <Sprite path={Mob}/>
+        </div>
+
+        <div className={f.text}>
+          <h1>BEGINT U BINNENKORT OOK MET ROBIN ASSISTANT?</h1>
+          <p>
+            Al veel instellingen hebben zich al aangesloten bij Robin Assistant. U binnenkort ook?
+              <br/><br/>
+            Meld u hieronder aan. Voor meer informatie kunt u contact opnemen via de “Ik wil meer info” button of een mail sturen naar:
+          </p>
+        </div>
+
+        <div className={f.buttons}>
+          <button>IK MELD MIJ AAN</button>
+          <button>IK WIL MEER INFO</button>
         </div>
 
       </div>
