@@ -40,6 +40,7 @@ export const App = (): JSX.Element => (
   <Fragment>
     <SceneManager>
       {/*  Header*/}
+      <div className="header">
       <Sprite classname="first" path={HeaderColor}/>
       <Sprite classname="robin" path={RobinAssistant}/>
       <Daily />
@@ -49,6 +50,7 @@ export const App = (): JSX.Element => (
       <Scroll />
       <Sprite classname="outerPointer" path={PointerDown} />
       <Sprite classname="innerPointer" path={Arrow} />
+      </div>
     {/*  END Header*/}
     </SceneManager>
       {/*  Story-Center*/}
