@@ -56,9 +56,9 @@ export const App = (): JSX.Element => (
                 <p>“Ik ben 24 jaar oud en Petra begeleidt mij al een aantal jaren”</p>
               </div>
               <div className={s.heroFunctions}>
-                <Sprite classname="function" path={Wekker} />
-                <Sprite classname="function" path={Bed} />
-                <Sprite classname="function" path={Thee} />
+                <Sprite path={Wekker} />
+                <Sprite path={Bed} />
+                <Sprite path={Thee} />
               </div>
             </div>
           </div>

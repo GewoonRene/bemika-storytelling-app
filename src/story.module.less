@@ -210,5 +210,26 @@
     }
   }
 
-
 }
+
+/*
+  Wide Iphone Fix, aka Iphone 6 / 7 / 8 Plus
+*/
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
+  .second-sprite {
+    transform: translateX(20vw) !important;
+  }
+}
+
+/*
+  Small Iphone Fix, aka Iphone SE / 5
+*/
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (-webkit-device-pixel-ratio: 2) {
+  .hero-functions > img {
+    margin: 0 1spain px;
+  }
+  .second-sprite {
+    transform: translateX(-10px) !important;
+  }
+}
+
