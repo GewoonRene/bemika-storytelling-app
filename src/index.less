@@ -78,6 +78,7 @@ a{
   position: absolute;
   top: 18%;
   left: 57%;
+  font-family: 'GilroyLight', sans-serif;
 }
 
 .button {
@@ -90,6 +91,8 @@ a{
   position: absolute;
   top: 25%;
   left: 61%;
+  font-family: 'GilroyLight', sans-serif;
+
 }
 .button a{
   font-size: 18px;
@@ -122,11 +125,18 @@ a{
   position: absolute;
   top: 45%;
   left: 50%;
+  font-family: 'GilroyLight', sans-serif;
 }
 .innerPointer {
   position: absolute;
   top: 46%;
   left: 970px;
+}
+
+@media screen and (max-width: 1366px ){
+  .quote {
+    top: 21%;
+  }
 }
 
 @media screen and (max-width: 1200px ){
@@ -193,24 +203,25 @@ a{
   .quote {
     font-size: 30px;
     position: absolute;
-    top: 10%;
-    left: 20%;
+    top: 9%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .firstPhone {
-    top: 24%;
+    top: 27%;
   }
   .secondPhone {
-    top: 13%;
+    top: 15%;
   }
 
   .button {
-    top: 40%;
-    left: 24%;
+    top: 42%;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .scrollDown {
-    top: 44%;
-    left: 35%;
+    display: none;
   }
   .outerPointer{
     left: 45%;
