@@ -1,7 +1,9 @@
 @charset "UTF-8";
 
+* {
+    box-sizing: border-box
+}
 
-* { box-sizing: border-box }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -15,219 +17,49 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block;
+    display: block;
 }
+
 body {
-  line-height: 1;
-  background: transparent;
+    line-height: 1;
+    background: transparent;
 }
+
 ol, ul {
-  list-style: none;
+    list-style: none;
 }
+
 blockquote, q {
-  quotes: none;
+    quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: none;
+    content: none;
 }
+
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
-a{
-  text-decoration: none;
+
+a {
+    text-decoration: none;
 }
 
 #app {
-  overflow-x: hidden;
-  position: relative;
-  height: 200vh;
-  width: 100vw;
-}
-//Header
-
-.header {
-  height: 100vh;
-  width: 100vh;
-}
-.first {
-  position: absolute;
-  top: -200px;
-  left: -80px;
-  width: 108%;
-}
-
-.robin {
-  position: absolute;
-  top: 8%;
-  left: 60%;
-}
-
-.quote {
-  font-size: 40px;
-  color: white;
-  position: absolute;
-  top: 18%;
-  left: 57%;
-  font-family: 'GilroyLight', sans-serif;
-}
-
-.button {
-  border-radius: 25px;
-  width: 320px;
-  height: 50px;
-  padding-top: 15px;
-  padding-left: 80px;
-  background: #F03875;
-  position: absolute;
-  top: 25%;
-  left: 61%;
-  font-family: 'GilroyLight', sans-serif;
-
-}
-.button a{
-  font-size: 18px;
-  color: white;
-}
-
-.firstPhone {
-  position: absolute;
-  top: 12%;
-  left: -85px;
-  height: 35%;
-  width: 40%;
-}
-
-.secondPhone {
-  position: absolute;
-  top: 6%;
-  left: 15%;
-  height: 35%;
-  width: 40%;
-}
-
-.scrollDown {
-  color: #464545;
-  position: absolute;
-  top: 43%;
-  left: 46%;
-}
-.outerPointer {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  font-family: 'GilroyLight', sans-serif;
-}
-.innerPointer {
-  position: absolute;
-  top: 46%;
-  left: 970px;
-}
-
-@media screen and (max-width: 1366px ){
-  .quote {
-    top: 21%;
-  }
-}
-
-@media screen and (max-width: 1200px ){
-  .first {
-    width: 170%;
-  }
-  .robin {
-    position: absolute;
-    top: 3%;
-    left: 36%;
-  }
-  .quote {
-    position: absolute;
-    top: 12%;
-    left: 30%;
-  }
-
-  .firstPhone {
-    position: absolute;
-    top: 26%;
-    left: 45%;
-    height: 15%;
-  }
-  .secondPhone {
-    position: absolute;
-    top: 15%;
-    height: 25%;
-    width: 70%;
-  }
-
-  .button {
-    position: absolute;
-    top: 42%;
-    left: 34%;
-  }
-
-  .scrollDown {
-    position: absolute;
-    top: 45%;
-    left: 40%;
-  }
-
-  .outerPointer {
-    position: absolute;
-    top: 46%;
-    left: 48%;
-  }
-  .innerPointer {
-    position: absolute;
-    top: 47%;
-    left: 49%;
-  }
-}
-
-@media screen and (max-width: 768px){
-  .first {
-    width: 285%;
-  }
-  .robin {
-    width: 40%;
-    position: absolute;
-    left: 30%;
-  }
-  .quote {
-    font-size: 30px;
-    position: absolute;
-    top: 9%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .firstPhone {
-    top: 27%;
-  }
-  .secondPhone {
-    top: 15%;
-  }
-
-  .button {
-    top: 42%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .scrollDown {
-    display: none;
-  }
-  .outerPointer{
-    left: 45%;
-  }
-  .innerPointer {
-    top: 47%;
-    left: 47%;
-  }
+    overflow-y: hidden;
+    position: relative;
+    height: auto;
+    max-width: 100%;
+    width: 100vw;
 }

@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="nl">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <% for (name in htmlWebpackPlugin.options.meta) { %>
-        <meta name="<%= name %>" content="<%= htmlWebpackPlugin.options.meta[name] %>" />
+        <meta name="<%= name %>" content="<%= htmlWebpackPlugin.options.meta[name] %>"/>
     <% } %>
     <title><%= htmlWebpackPlugin.options.title %></title>
     <% for (i in htmlWebpackPlugin.files.js) { %>
@@ -16,12 +16,12 @@
         <script charset="utf-8" src="<%= htmlWebpackPlugin.files.js[i] %>"></script>
     <% } %>
     <% for (i in htmlWebpackPlugin.files.css) { %>
-        <link rel="stylesheet" type="text/css" href="<%= htmlWebpackPlugin.files.css[i] %>" />
+        <link rel="stylesheet" type="text/css" href="<%= htmlWebpackPlugin.files.css[i] %>"/>
     <% } %>
-    <link href="<%=htmlWebpackPlugin.files.favicon%>" rel="shortcut icon">
+    <link href="<%= htmlWebpackPlugin.files.favicon %>" rel="shortcut icon">
 </head>
 <body>
-<noscript><%= htmlWebpackPlugin.options.noscript%></noscript>
-<div id="app" style="overflow: auto;"></div>
+    <noscript><%= htmlWebpackPlugin.options.noscript %></noscript>
+    <div id="app"></div>
 </body>
 </html>
